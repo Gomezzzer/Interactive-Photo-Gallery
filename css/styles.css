@@ -14,9 +14,9 @@
     display: flex;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, -50%);
-    font-size: 7rem;
+    font-size: 6rem;
     Color: white;
   }
 /**
@@ -207,7 +207,7 @@ nav {
       display: flex;
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 53%;
       transform: translate(-50%, -50%);
       font-size: 11rem;
       Color: white;
