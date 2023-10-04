@@ -6,7 +6,19 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .hero img {
+    width: 100vw;
+    background-size: cover;
+  }
+  .center {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7rem;
+    Color: white;
+  }
 /**
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
@@ -156,6 +168,8 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-gap: 15px;
     justify-items: center;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
   }
 
   .search-bar {
@@ -188,6 +202,15 @@ nav {
   @media screen and (min-width: 768px) {
     nav ul li {
       font-size: 2rem;
+    }
+    .center {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 11rem;
+      Color: white;
     }
     
   }
@@ -290,5 +313,6 @@ nav {
 @media only screen  and (min-width : 1024px) {
   nav ul li {
     font-size: 1rem;
-}
+ }
+
 }
