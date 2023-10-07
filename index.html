@@ -7,7 +7,11 @@
     <title>An Interactive Photo Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
 
      <!-- script
    ================================================== -->   
@@ -48,8 +52,14 @@
         </div>
 
         <div class="hero">
-         <img src="photos/rainbow.jpg"  alt="raibow bricks">
-         <div class="center">Shutter.</div>
+            <img src="photos/rainbow.jpg"  alt="raibow bricks">
+            <div class="text-box">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                </p>
+            </div>
+            <div class="center">Shutter.</div>
+            </div>
         </div> 
         
         <div class="gallery">
@@ -152,8 +162,11 @@
        delay: 400
       });
 
-      ScrollReveal().reveal('.gallery', { delay: 500, origin: 'left' });
-      ScrollReveal().reveal('.center', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.hero img', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.center', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.gallery', { delay: 800, origin: 'bottom' });
+      
       
      
  </script>
