@@ -6,6 +6,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 .hero img {
   width: 71vw;
   height: auto;
@@ -378,7 +385,7 @@ nav {
   }
   nav ul {
     background: hsl( var(--primary-color) / 0.05);
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(0.5rem);
   }
   nav ul li {
     margin: 8px;
