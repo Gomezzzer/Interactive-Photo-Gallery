@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+
+     <!-- script
+   ================================================== -->   
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+<body>
+	<header>   	
+		<div class="row">
+
+	
+		  <button class="burger-menu" id="burger-menu">
+			  <ion-icon class="bars" name="menu-outline"></ion-icon>
+		  </button>
+
+		  <nav>
+			<h1>Shutter Scapes Studio</h1>
+			
+			<ul class="navigation">
+			  <li><a href="index.html" class="nav-link">Home</a></li>
+			  <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+			  <li><a href="about.html" class="nav-link">About</a></l>
+			  <li><a href="#Advertising" class="nav-link">Advertising</a></li>
+			  <li><a href="#contact" class="nav-link">Contact</a></li>
+			</ul>
+			
+		  </nav>
+		
+		</div> <!-- /row --> 		
+	</header> <!-- /header -->
+
+    <div class="search-bar">
+        <label for="search" class="search"></label>
+        <input type="search" id="search" name="search"  placeholder="Search">
+    </div>
+
+	<button class="button3" onclick="one()">1</button>
+	<button class="button3" onclick="two()">2</button>
+	<button class="button3" onclick="four()">4</button>
+
+	<script>
+		// Get the elements with class="column"
+		var elements = document.getElementsByClassName("column");
+
+	// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "5%";
+  }
+}
+
+	</script>
+
+	<div class="row2">
+		<div class="column">
+		  <img src="images/wedding.jpg">
+		  <img src="images/rocks.jpg">
+		  <img src="images/falls2.jpg">
+		  <img src="images/paris.jpg">
+		  <img src="images/nature.jpg">
+		  <img src="images/mist.jpg">
+		  <img src="images/paris.jpg">
+		</div>
+		<div class="column">
+		  <img src="images/underwater.jpg">
+		  <img src="images/ocean.jpg">
+		  <img src="images/wedding.jpg">
+		  <img src="images/mountainskies.jpg">
+		  <img src="images/rocks2.jpg">
+		  <img src="images/underwater.jpg">
+		</div>
+		<div class="column">
+		  <img src="images/wedding.jpg">
+		  <img src="images/rocks.jpg">
+		  <img src="images/falls2.jpg">
+		  <img src="images/paris.jpg">
+		  <img src="images/nature.jpg">
+		  <img src="images/mist.jpg">
+		  <img src="images/paris.jpg">
+		</div>
+		<div class="column">
+		  <img src="images/underwater.jpg">
+		  <img src="images/ocean.jpg">
+		  <img src="images/wedding.jpg">
+		  <img src="images/mountainskies.jpg">
+		  <img src="images/rocks.jpg">
+		  <img src="images/underwater.jpg">
+		</div>
+	  </div>
+
+	<footer>
+		
+	</footer>
+
+    <script src="js/baguetteBox.min.js"></script>
+	<script src="js/app.js"></script>
+
+    
+  <!-- Ion icons scripts -->
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    ScrollReveal({
+      // reset: true,
+       distance: '60px',
+       duration: 2500,
+       delay: 400
+      });
+
+      ScrollReveal().reveal('.hero img', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.center', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.gallery', { delay: 800, origin: 'bottom' });
+      
+      
+     
+ </script>
+</body>
+
+</html>
