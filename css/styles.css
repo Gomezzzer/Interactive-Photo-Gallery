@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 input,
 textarea,
 button,
@@ -22,11 +23,12 @@ a {
 }
 .center {
   display: flex;
+  font-family: 'Bruno Ace', cursive;
   position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 34%;
+  left: 31%;
   transform: translate(-50%, -50%);
-  font-size: 6rem;
+  font-size: 4rem;
   Color: black;
 }
 .center:hover {
@@ -34,6 +36,8 @@ a {
   transform:scale(1.3);
   transition: transform 1.05s ease-in-out;
 }
+
+
 /**
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
@@ -219,10 +223,179 @@ nav {
  .box:hover {
     transform:scale(1.3);
   }
+
+  /* About Section */
+  figure.snip1139 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+  figure.snip1139 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  }
+  figure.snip1139 img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  figure.snip1139 blockquote {
+    position: relative;
+    background-color: #ffffff;
+    padding: 25px 50px 25px 50px;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    line-height: 1.6em;
+    font-style: italic;
+  }
+  figure.snip1139 blockquote:before,
+  figure.snip1139 blockquote:after {
+    font-family: 'FontAwesome';
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal;
+  }
+  figure.snip1139 blockquote:before {
+    top: 25px;
+    left: 20px;
+  }
+  figure.snip1139 blockquote:after {
+    content: "\201D";
+    right: 20px;
+    bottom: 0;
+  }
+  figure.snip1139 .arrow {
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #ffffff;
+    margin: 0;
+    position: absolute;
+  }
+  figure.snip1139 .author {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 25px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  figure.snip1139 .author h5 {
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 800;
+  }
+  figure.snip1139 .author h5 span {
+    font-weight: 400;
+    text-transform: none;
+    padding-left: 5px;
+  }
+  
+  
+  .vertical-text {
+    writing-mode: vertical-rl; /* Rotates the text vertically */
+    transform: rotate(180deg); /* Rotates the text to be read top to bottom */
+  }
+  
+
+/* Team Section */
+.team {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.team h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 18rem;
+  height: 25rem;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  width: 18rem;
+  height: 12rem;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.card-info button {
+  margin: 2rem 1rem;
+}
+
+.card-name {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #111;
+}
+
+.card-role {
+  font-size: 1rem;
+  color: #888;
+  margin: 5px 0;
+}
+
+.card-email {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
  
   @media screen and (min-width: 768px) {
     nav ul li {
-      font-size: 2rem;
+      font-size: 3rem;
     }
     nav ul li:hover {
       color: lightslategray;
@@ -248,11 +421,12 @@ nav {
     }
     .center {
       display: flex;
+      font-family: 'Bruno Ace', cursive;
       position: absolute;
-      top: 55%;
-      left: 53%;
+      top: 27%;
+      left: 30%;
       transform: translate(-50%, -50%);
-      font-size: 11rem;
+      font-size: 9rem;
       Color: black;
     }
     .center:hover {
@@ -264,7 +438,7 @@ nav {
       display: flex;
       position: absolute;
       font-size: 18px;
-      top: 27%;
+      top: 39%;
       left: 53%;
       background-color: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(20px);
@@ -350,7 +524,7 @@ nav {
     .text-box {
       display: flex;
       position: absolute;
-      top: 33%;
+      top: 53%;
       left: 53%;
       background-color: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(20px);
@@ -413,224 +587,102 @@ nav {
   }
 }
 
-@media only screen  and (min-width : 1024px) {
+@media only screen and (min-width: 1024px) {
   nav ul li {
     font-size: 1rem;
     font-weight: 300;
- }
- nav ul li:hover {
-  color: lightslategray;
-  transform:scale(1.3);
-  transition: transform 1.05s ease-in-out;
-  margin-left: 0rem;
+  }
+
+  nav ul li:hover {
+    color: lightslategray;
+    transform: scale(1.3);
+    transition: transform 1.05s ease-in-out;
+    margin-left: 0rem;
+  }
+
+  .hero img {
+    width: 28%;
+    height: auto;
+    margin-top: -2rem;
+    margin-left: 21rem;
+    background-size: cover;
+    border-radius: 8%;
+  }
+
+  .center {
+    display: flex;
+    font-family: 'Bruno Ace', cursive;
+    position: absolute;
+    top: 39%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    font-size: 12rem;
+    color: black;
+  }
+
+  .center:hover {
+    color: lightslategray;
+    transform: scale(1.3);
+    transition: transform 1.05s ease-in-out;
+  }
+
+  .text-box {
+    display: flex;
+    position: absolute;
+    top: 56%;
+    left: 53%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-51px, -27px);
+  }
 }
 
- .hero img {
-   width: 28%;
-   height: auto;
-   margin-top: -2rem;
-   margin-left: 21rem;
-   background-size: cover;
-   border-radius: 8%;
-}
- .center {
-  display: flex;
-  position: absolute;
-  top: 68%;
-  left: 53%;
-  transform: translate(-50%, -50%);
-  font-size: 11rem;
-  Color: black;
- }
- .center:hover {
-  color: lightslategray;
-  transform:scale(1.3);
-  transition: transform 1.05s ease-in-out;
-}
- .text-box {
-  display: flex;
-  position: absolute;
-  top: 35%;
-  left: 53%;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  padding: 40px;
-  max-width: 400px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  transform: translate(-51px, -27px);
- }
+/* gallery */
 
-}
-
-/* about page */
-
- 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #40b736;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links a {
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  background-color: #40b736;
-  border-radius: 4px;
-  color: white;
-}
-
-/* About Section */
-.about {
-  background: rgb(224, 251, 222);
-  background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(149, 218, 217) 100%);
-  padding: 100px 0 20px 0;
-  text-align: center;
-}
-
-.about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1rem;
-  color: #323030;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about-info {
-  margin: 2rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-}
-
-.about-img {
-  width: 20rem;
-  height: 20rem;
-
-}
-
-.about-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  object-fit: contain;
-}
-
-.about-info p {
-  font-size: 1.3rem;
-  margin: 0 2rem;
-  text-align: justify;
-}
-
-.button2 {
-  border: none;
-  outline: 0;
-  padding: 10px;
-  margin: 2rem;
-  font-size: 1rem;
-  color: white;
-  background-color: #40b736;
-  text-align: center;
-  cursor: pointer;
-  width: 15rem;
-  border-radius: 4px;
-}
-
-.button2:hover {
-  background-color: #1f9405;
-}
-*/
-/* Team Section */
-.team {
-  padding: 30px 0;
-  text-align: center;
-}
-
-.team h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.team-cards {
+.row2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+  padding: 0 4px;
 }
 
-.card {
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-  width: 18rem;
-  height: 25rem;
-  margin-top: 10px;
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  padding: 0 4px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
-}
-
-.card-img {
-  width: 18rem;
-  height: 12rem;
-}
-
-.card-img img {
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
   width: 100%;
-  height: 100%;
-  object-fit: fill;
 }
 
-.card-info button {
-  margin: 2rem 1rem;
+.button3 {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+  margin-left: 1rem;
 }
 
-.card-name {
-  font-size: 2rem;
-  margin: 10px 0;
+.button3:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
 }
 
-.card-role {
-  font-size: 1rem;
-  color: #888;
-  margin: 5px 0;
-}
-
-.card-email {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+.button3:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
 }
 
 @media (max-width: 768px) {
@@ -651,37 +703,6 @@ footer {
       margin-right: 0;
   }
 
-  .about h1 {
-      font-size: 2rem;
-  }
-
-  .about p {
-      font-size: 0.9rem;
-  }
-
-  .about-info {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .about-img {
-      width: 60%;
-      height: 60%;
-      margin-bottom: 1rem;
-  }
-
-  .about-info p {
-      margin: 1rem 2rem;
-  }
-
-  .about-info button {
-      margin: 1rem 2rem;
-      width: 10rem;
-  }
-
-  .team {
-      margin: 0 1rem;
-  }
 }
 
 /* gallery */
